@@ -1,0 +1,33 @@
+<>---COMANDOS---<>
+
+
+
+create database clase1
+go
+
+use clase1
+go
+
+
+-- se crea el usuarrio de la vase de datos --
+create table usuario(
+id int not null,
+nombre varchar(30) not null,
+edad int not null,
+
+
+);
+-- se asignan los datos --
+INSERT INTO usuario (id, nombre, edad)
+VALUES (1, 'Daniel', 23);
+
+INSERT INTO usuario (id, nombre, edad)
+VALUES
+    (1, 'Daniel', 23),
+    (2, 'María', 20),
+    (3, 'Carlos', 25),
+    (4, 'Ana', 22),
+    (5, 'Luis', 30);
+
+select * from usuario
+go
